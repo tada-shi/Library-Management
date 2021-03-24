@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>ISSUE BOOK</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/deletebooks.css') }}">  
+</head>
+<body>
+
+<h1>RETURN BOOK</h1>
+    <form action="/returnbook " method="post">
+        <p>BOOK ID : <input type="text" name="ID"></p>
+        <input type="submit">
+    </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3><a href='/'>Go To Home</a>
+</body>
+</html>

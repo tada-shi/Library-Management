@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2F4F4F;
+}
+.content{
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    margin: 1% 25%;
+    padding: 30px 80px;
+    width: 50vw;
+    background-color: 	#008B8B;
+}
+.head{
+    border-width: 10px; 
+    margin: 15% 25%;
+    font-size: 50px;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: green;
+}
+.msg{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 2rem;
+}

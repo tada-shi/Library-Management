@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">  
+</head>
+<body>
+
+{% with messages = get_flashed_messages() %}  
+    {% if messages %}  
+        {% for message in messages %}  
+            <p class='msg'>{{ message }}</p>  
+        {% endfor %}  
+    {% endif %}  
+{% endwith %}  
+
+<h1 class="head content">Welcome to Bane Library</h1>
+
+<h2 class="content"><a href="/addbookForm">ADD BOOK DETAILS</a></h2>
+<h2 class="content"><a href="/viewbooks">VIEW BOOK LIST</a></h2>
+<h2 class="content"><a href="/deletebooks">DELETE BOOK</a></h2>
+<h2 class="content"><a href="/issuebook">ISSUE BOOK TO STUDENT</a></h2>
+<h2 class="content"><a href="returnbook">RETURN BOOK</a></h2>
+</body>
+</html>
